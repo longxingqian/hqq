@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.container>*{
+    z-index: 2;
+}
+#map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    z-index: 1;
+}
+.wtitle{
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    width: 100%;
+    height: 0.7rem;
+    font-size: 0.35rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff;
+}
+.wtitletime{
+    font-size: 0.23rem;
+}
+/* 左边 */
+.leftwarn{
+    position: absolute;
+    top: 0.2rem;
+    left: 0.1rem;
+    background-color: #fff;
+    font-size: 0.24rem;
+    border-radius: 5px;
+    display: none;
+}
+.leftwarn li{
+    padding: 0.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    color: #323232;
+}
+.leftwarn li.select{
+    color: #3183ff;
+}
+.dayun .leftwarn li.select{
+    color: #F5A200;
+}
+.leftwarn img{
+    margin-right: 0.1rem;
+    width: 0.3rem;
+}
+/* 右边 */
+.rightwarn{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    background-color: #fff;
+    font-size: 0.24rem;
+    border-radius: 5px;
+    display: none;
+}
+/* 预警 */
+.warnsingal{
+    position: absolute;
+    top: 55vh;
+    left: 0;
+    width: 100vw;
+    height: 45vh;
+    overflow-y: scroll;
+    background-color: rgb(245, 245, 245);
+}
+.statistical{
+    width: 100%;
+    font-size: 0.29rem;
+    text-align: center;
+}
+.statisticalt{
+    width: 100%;
+}
+.stitle{
+    line-height: 0.8rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #fff;
+}
+.swarn{
+    line-height: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f3fbff;
+    border-top: 1px solid #e3e6ea;
+    border-bottom: 1px solid #e3e6ea;
+    box-sizing: border-box;
+}
+.dayun .swarn{
+    background-color: rgba(253, 208, 0, 0.15);
+    border-top: 1px solid rgba(252, 189, 0, 0.3);
+    border-bottom: 1px solid rgba(252, 189, 0, 0.3);
+}
+.swarn div{
+    flex: 2;
+    border-right: 1px solid #e3e6ea;
+    box-sizing: border-box;
+}
+.dayun .swarn div{
+    border-right: 1px solid rgba(252, 189, 0, 0.3);
+}
+.swarn div:last-child{
+    border-right: none;
+}
+.statisticalul{
+    width: 100%;
+}
+.statisticalul li{
+    line-height: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #e3e6ea;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.dayun .statisticalul li{
+    border-bottom: 1px solid rgba(252, 189, 0, 0.3);
+}
+.statisticalul li div{
+    flex: 2;
+    border-right: 1px solid #e3e6ea;
+    box-sizing: border-box;
+}
+.dayun .statisticalul li div{
+    border-right: 1px solid rgba(252, 189, 0, 0.3);
+}
+.statisticalul li div:nth-child(2){
+    color: #3183ff;
+}
+.statisticalul li div:nth-child(3){
+    color: #ffc731;
+}
+.statisticalul li div:nth-child(4){
+    color: #ff7600;
+}
+.statisticalul li div:nth-child(5){
+    color: #ff0000;
+    border-right: none;
+}
+.statisticalul li div.select{
+    background-color: rgba(255,118,0,0.2);
+}
+/* 列表 */
+.warnlist{
+    width: 100%;
+}
+.warnlisttitle{
+    margin: 0.2rem 0;
+    height: 0.88rem;
+    font-size: 0.26rem;
+    line-height: 0.88rem;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.warnlisttitle>li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-signal-type-select{
+    width: 30%;
+}
+.m-signal-level-select{
+    width: 18%;
+}
+.m-signal-state-all{
+    width: 15%;
+}
+.m-signal-state-effective{
+    width: 15%;
+}
+.m-signal-area{
+    width: 22%;
+}
+.warnlisttitle>li>div{
+    flex: 2;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.warnlisttitle>li>div>img{
+    width: 0.24rem;
+}
+.warnlisttitle>li>div>ul{
+    position: absolute;
+    left: 0rem;
+    top: 0.68rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    line-height: 0.5rem;
+    font-size: 0.2rem;
+    width: 1.5rem;
+    display: none;
+    z-index: 10;
+    height: 2.5rem;
+    overflow-y: scroll;
+}
+.warnlisttitle>li>div>ul>li{
+    width: 100%;
+}
+.warnlisttitle>li>div>ul>li.select{
+    background-color: #3183ff;
+    color: #fff;
+}
+.m-signal-state-all.select{
+    color: #3183ff;
+}
+.dayun .m-signal-state-all.select{
+    color: #FCBD00;
+}
+.m-signal-state-effective.select{
+    color: #3183ff;
+}
+.dayun .m-signal-state-effective.select{
+    color: #FCBD00;
+}
+.warnlistul{
+    width: 100%;
+    background: #f0f0f0;
+    overflow: scroll;
+    clear: both;
+}
+.m-signal-item{
+    position: relative;
+    height: 1.82rem;
+    cursor: pointer;
+    background: #fbfbfb;
+}
+.m-signal-item:nth-child(even){
+    background: #f3fbfe;
+}
+.dayun .m-signal-item:nth-child(even){
+    background: rgba(253, 208, 0, 0.08);
+}
+.m-signal-item .m-signal-image{
+    position: absolute;
+    left: 4%;
+    top: 0.4rem;
+    width: 15.73%;
+}
+.m-signal-item .m-signal-image img{
+    width: 100%;
+}
+.m-signal-item .m-signal-title{
+    position: absolute;
+    top: 0.4rem;
+    left: 23.73%;
+    right:12%;
+}
+.m-signal-item .m-signal-title span:nth-child(1){
+    position: absolute;
+    color: #323232;
+    font-size: 0.34rem;
+    line-height: 0.6rem;
+    white-space: nowrap;
+}
+.m-signal-item .m-signal-title span:nth-child(2){
+    color: #656565;
+    font-size: 0.24rem;
+    top: 0.6rem;
+    left: 0;
+    position: absolute;
+}
+.m-signal-item .m-signal-state{
+    color: #fff;
+    position: absolute;
+    border-top-right-radius: 0.12rem;
+    border-bottom-left-radius: 0.12rem;
+    width: 1.16rem;
+    right: 0.16rem;
+    top: 0;
+    font-size: 0.24rem;
+    height: 0.48rem;
+    text-align: center;
+    line-height: 0.48rem;
+}
+.m-signal-item .m-signal-state.effective{
+    background: linear-gradient(to right,#ffba00,#ff7200);
+}
+.m-signal-item .m-signal-state.relieve{
+    background: linear-gradient(to right,#c6c6c6,#a3a2a3);
+}
+
+.wuimg{
+    width: 100%;
+    display: none;
+    text-align: center;
+    background-color: white;
+}
+.wuimg img{
+    margin-top: 0.2rem;
+    height: 2rem;
+}

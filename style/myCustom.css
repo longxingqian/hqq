@@ -1,0 +1,633 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-image: url(../images/alarm/背景.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e7f4ff;
+}
+.myCustom{
+    position: relative;
+}
+/* 停课定制 */
+.myCustomStopClass{
+    margin: 0.3rem 0.2rem 0 0.2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.myCustomStopClassTitle{
+    padding: 0 0.2rem;
+    height: 0.92rem;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.32rem;
+    font-weight: lighter;
+}
+.myCustomStopClassTitle div{
+    width: 4px;
+    height: 0.32rem;
+    background-color: #007eff;
+    border-radius: 2px;
+}
+.myCustomStopClassTitle span{
+    margin-left: 0.1rem;
+    font-weight: normal;
+}
+.myCustomStopClassList ul{
+    padding: 0 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.myCustomStopClassList ul li{
+    width: 25%;
+    line-height: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.myCustomStopClassList ul li img{
+    margin-left: 0.1rem;
+    width: 0.28rem;
+    height: 0.28rem;
+}
+.myCustomStopClassList ul li span{
+    margin-left: 0.05rem;
+    font-size: 0.28rem;
+    font-weight: lighter;
+}
+/* 订阅地区 */
+.myCustomArea{
+    margin: 0 0.2rem 0 0.2rem;
+    background-color: #fff;
+    border-top-left-radius: 10px;;
+    border-top-right-radius: 10px;;
+    position: relative;
+/*  */
+    height: 1.2rem;
+}
+.myCustomAreaTitle{
+    padding: 0 0.2rem;
+    height: 0.92rem;
+    /* border-bottom: 1px solid #e6e6e6; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.32rem;
+    /* font-weight: lighter; */
+    /*  */
+    height: 1.2rem;
+    justify-content: space-between;
+}
+.myCustomAreaTitleleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomAreaTitleleft div{
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #007eff;
+}
+.myCustomAreaTitleleft span{
+    margin-left: 0.1rem;
+    font-weight: normal;
+}
+
+.myCustomAreaTitleright{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomAreaTitleright span{
+    font-size: 0.28rem;
+    color: #666666;
+}
+.myCustomAreaTitleright img{
+    width: 0.28rem;
+    height: 0.28rem;
+}
+
+.myCustomAreaList ul{
+    padding: 0 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.myCustomAreaList ul li{
+    width: 25%;
+    line-height: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.myCustomAreaList ul li img{
+    margin-left: 0.1rem;
+    width: 0.28rem;
+    height: 0.28rem;
+}
+.myCustomAreaList ul li span{
+    margin-left: 0.05rem;
+    font-size: 0.28rem;
+    font-weight: lighter;
+}
+/* 订阅时间 */
+.myCustomTime{
+    margin: 0 0.2rem 0 0.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+    position: relative;
+}
+.myCustomTimeTile{
+    padding: 0 0.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myCustomTimeTileleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomTimeTileleft div{
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #007eff;
+}
+.myCustomTimeTileleft span{
+    margin-left: 0.1rem;
+    font-size: 0.32rem;
+}
+.myCustomTimeTileright{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomTimeTileright span{
+    font-size: 0.28rem;
+    color: #666666;
+}
+.myCustomTimeTileright img{
+    width: 0.28rem;
+    height: 0.28rem;
+}
+.myCustomTimeSelect{
+    position: absolute;
+    right: 0.5rem;
+    top: 1.0rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    color: #666666;
+    text-align: center;
+    padding: 0.2rem;
+    z-index: 10;
+    display: none;
+    border-radius: 5px;
+}
+.myCustomTimeSelect li.select{
+    background-color: #7b83fd;
+    color: #fff;
+}
+/* 订阅等级 */
+.myCustomLevel{
+    margin: 0 0.2rem 0 0.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+    position: relative;
+}
+.myCustomLevelTitle{
+    padding: 0 0.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myCustomLevelTitleleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomLevelTitleleft div{
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #007eff;
+}
+.myCustomLevelTitleleft span{
+    margin-left: 0.1rem;
+    font-size: 0.32rem;
+}
+.myCustomLevelTitleright{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomLevelTitleright span{
+    font-size: 0.28rem;
+    color: #ff7374;
+}
+.myCustomLevelTitleright img{
+    width: 0.28rem;
+    height: 0.28rem;
+}
+.myCustomLevelSelect{
+    position: absolute;
+    right: 0.5rem;
+    top: 1.0rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    color: #666666;
+    text-align: center;
+    padding: 0.2rem;
+    z-index: 10;
+    display: none;
+    border-radius: 5px;
+}
+.myCustomLevelSelect li.select{
+    background-color: #7b83fd;
+    color: #fff;
+}
+/* 订阅预警 */
+.myCustomalert{
+    margin: 0.3rem 0.2rem 0 0.2rem;
+    min-height: 1.98rem;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.myCustomalertTile{
+    padding: 0 0.2rem;
+    height: 0.92rem;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myCustomalertTileleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomalertTileleft div{
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #007eff;
+}
+.myCustomalertTileleft span{
+    margin-left: 0.1rem;
+    font-size: 0.32rem;
+}
+.myCustomalertTileright{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomalertTileright img{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.myCustomalertTileright span{
+    margin-left: 0.1rem;
+    font-size: 0.3rem;
+    color: #666666;
+}
+/* 列表li */
+.myCustomalertList{
+    padding: 0 0.2rem 0.6rem 0.2rem;
+}
+.myCustomalertList .myCustomalertListul{
+    margin-top: 0.6rem;
+    padding: 0.2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #43A9FD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+.myCustomalertListul .myCustomalertListulTitle{
+    position: absolute;
+    top: -0.4rem;
+    left: 50%;
+    width: 3.28rem;
+    /* height: 0.56rem; */
+    margin-left: -1.64rem;
+    background-color: #fff;
+}
+.myCustomalertListulTitle .myCustomalertListulTitleleft{
+    position: absolute;
+    left: 0;
+    top: 0.33rem;
+    width: .12rem;
+    height: .12rem;
+    background: #43A9FD;
+    transform: rotate(45deg);
+}
+.myCustomalertListulTitle .myCustomalertListulTitlecenter{
+    margin: 0 auto;
+    width: 2.58rem;
+    /* padding-top: 0.2rem; */
+    transform: skew(-20deg);
+    background: #43A9FD;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .3rem;
+    font-weight: bold;
+    color: #fff;
+
+    /* background-image: url(../images/alarm/new/yun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top; */
+}
+.myCustomalertListulTitle .myCustomalertListulTitleright{
+    position: absolute;
+    right: 0;
+    top: 0.33rem;
+    width: .12rem;
+    height: .12rem;
+    background: #43A9FD;
+    transform: rotate(45deg);
+
+}
+.myCustomalertListli{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.myCustomalertListli .typeImg{
+    margin-top: 0.3rem;
+    width: 0.98rem;
+    height: 0.98rem;
+}
+.myCustomalertListli .typeSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.myCustomalertListli .typeSpan span{
+    margin-left: 0.1rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #656565;
+}
+.myCustomalertListli .typeSpan img{
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.myCustomalertListli .typeROYB{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 0.13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCustomalertListli .typeROYB i{
+    display: none;
+    margin: 0 2px;
+    width: 0.13rem;
+    height: 0.13rem;
+}
+.myCustomalertListli .typeROYB i:nth-child(1){
+    background-color: #ee3939;
+}
+.myCustomalertListli .typeROYB i:nth-child(2){
+    background-color: #f6a52e;
+}
+.myCustomalertListli .typeROYB i:nth-child(3){
+    background-color: #e0d800;
+}
+.myCustomalertListli .typeROYB i:nth-child(4){
+    background-color: #3541f7;
+}
+.myCustomalertListli .typeSelect{
+    position: absolute;
+    top: 1.8rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    color: #666666;
+    text-align: center;
+    padding: 0.2rem;
+    z-index: 10;
+    display: none;
+    border-radius: 5px;
+}
+.myCustomalertListli .typeSelect li.select{
+    background-color: #7b83fd;
+    color: #fff;
+}
+/* 其他预警类别 */
+.myCustomalertOther{
+    margin: 0.3rem 0.2rem 0 0.2rem;
+    min-height: 1.98rem;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+/* 保存定制*/
+.savePlan{
+    margin: 0.5rem 0.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 0.5rem;
+    font-size: .36rem;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient( #18a3fb, #18ccfb);
+    background-blend-mode: normal;
+}
+/* 地区弹框 */
+.tank{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.tankbg{
+    position: absolute;
+    top: 2rem;
+    right: 0.2rem;
+    /* bottom: 1.8rem; */
+    height: 7rem;
+    left: 0.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow-y: scroll;
+}
+.tankclose{
+    position: absolute;
+    left: 0;
+    /* bottom: 0.8rem; */
+    top: 9.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tankclose img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.tanktitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.32rem;
+    height: 1rem;
+}
+.tanktitlel{
+    flex: 2;
+    margin-left: 0.2rem;
+}
+.tanktitlec{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666666;
+}
+.tanktitlec img{
+    width: 0.4rem;
+    margin-right: 0.1rem;
+}
+.tanktitler{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666666;
+}
+.tanktitler img{
+    width: 0.4rem;
+    margin-right: 0.1rem;
+}
+.tankcontent{
+    width: 100%;
+}
+.tankcontenttop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+    height: 1rem;
+    background-color: rgb(244,248,255);
+}
+.tankcontenttopl{
+    margin-left: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tankcontenttopl div{
+    width: 4px;
+    height: 0.32rem;
+    border-radius: 2px;
+    margin-right: 0.1rem;
+    background-color: #3183ff;
+}
+.tankcontenttopr{
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666666;
+}
+.tankcontenttopr img{
+    width: 0.4rem;
+    margin-right: 0.1rem;
+}
+.tankcontentbottom{
+    padding: 0 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.tankcontentbottom li{
+    width: 25%;
+    line-height: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tankcontentbottom li[data-code="610000"]{
+    width: 33%;
+}
+.tankcontentbottom li[data-code="610403"]{
+    width: 33%;
+}
+.tankcontentbottom li img{
+    margin-left: 0.05rem;
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.tankcontentbottom li span{
+    margin-left: 0.05rem;
+    font-size: 0.28rem;
+    color: #666666;
+}
+.myCustomtotle{
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+    color: #fff;
+}
+.time{
+    font-size: 0.24rem;
+}
+.save{
+    padding: 0.1rem 0.2rem;
+    font-size: 0.24rem;
+    background-color: rgba(27, 121, 212, 0.5);
+    border-radius: 0.32rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save img{
+    margin-right: 0.1rem;
+    width: 0.24rem;
+}

@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-image: url(../images/alarm/背景.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e7f4ff;
+    position: relative;
+}
+.tuisong{
+    position: relative;
+}
+.myCustomtotle{
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+    color: #fff;
+}
+.time{
+    font-size: 0.24rem;
+}
+.save{
+    padding: 0.1rem 0.2rem;
+    font-size: 0.24rem;
+    background-color: rgba(27, 121, 212, 0.5);
+    border-radius: 0.32rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save img{
+    margin-right: 0.1rem;
+    width: 0.24rem;
+}
+.diqu{
+    margin: 0.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.AreaTitle{
+    padding: 0 0.2rem;
+    height: 0.89rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.32rem;
+    justify-content: space-between; 
+    border-bottom: 1px solid #EEEEEE;
+}
+.Titleleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Titleleft div{
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #1DAAFF;
+}
+.Titleleft span{
+    margin-left: 0.1rem;
+    font-size: 0.28rem;
+}
+.Titleright{
+    font-size: 0.24rem;
+    color: #999999;
+}
+.area{
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.area li{
+    margin-bottom: 0.2rem;
+    margin-left: 2%;
+    width: 22%;
+    height: 0.6rem;
+    font-size: 0.28rem;
+    color: #2C96FC;
+    background-color: #ECF5FF;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area li.select{
+    background-image: linear-gradient(90deg, #2E95FC 0%, #04C3FF 100%);
+    color: #fff;
+}
+.area li:nth-child(4n+1){
+    margin-left: 3%;
+}
+.area li img{
+    width: 0.28rem;
+    margin-right: 0.05rem;
+}
+/*  */
+.leixing{
+    margin: 0.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 0.28rem;
+}
+.leixingcontent .item{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.19rem;
+    position: relative;
+    border-bottom: 1px solid #E5E5E5;
+}
+.itemleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemleft img{
+    margin-right: 0.1rem;
+    width: 0.5rem;
+}
+.itemcenter{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    flex: 2;
+    color: #666666;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.itemcenter input{
+    width: 0.8rem;
+    height: 0.45rem;
+    outline: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    text-align: center;
+}
+.itemcenter div{
+    border: 1px solid #CCCCCC;
+    padding: 0.02rem 0.1rem;
+    border-radius: 3px;
+    color: #333333;
+}
+.itemcenter img{
+    width: 0.2rem;
+}
+.itemright{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url(../images/tuiSong/guan1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.itemright.select{
+    background-image: url(../images/tuiSong/guan2.png);
+}
+.itembottom{
+    position: absolute;
+    left: 0.6rem;
+    bottom: 0.16rem;
+    color: #999999;
+    font-size: 0.24rem;
+}
+.rain,.wind,.htemp,.dtemp{
+    padding-bottom: 0.2rem;
+}
+/*  */
+.gexinghua{
+    margin: 0.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 0.28rem;
+}
+.gexingtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.89rem;
+}
+.gexingtitle span{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.gexingtitle img{
+    height: 0.3rem;
+}
+.gexing{
+    margin: 0 0.2rem;
+    height: 0.89rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+.gexing:last-child{
+    border-bottom: 1px solid #fff; 
+}
+.gexing div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666666;   
+}
+.gexing div:last-child img{
+    margin-left: 0.2rem;
+    width: 0.12rem;
+}
+.gexingleft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gexingleft div{
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #1DAAFF;
+}
+.gexingleft span{
+    margin-left: 0.1rem;
+    font-size: 0.28rem;
+}
+.xingbie{
+    width: 1.2rem;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+.xingbie div.select{
+    color: #1DAAFF;
+}
+.xingbie div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xingbie div::before{
+    content: '';
+    display: inline-block;
+    border: solid 0.06rem #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 3px;  
+    margin-left: 3px;
+}
+.xingbie div.select::before{
+    border: solid 0.06rem #1daaff;
+}
+
+.tk{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.tkbg{
+   position: absolute;
+   left: 1rem;
+   right: 1rem;
+   top: 50%;
+   margin-top: -3rem;
+   background-color: #fff;
+   border-radius: 8px;
+}
+.tktitle{
+    text-align: center;
+    font-size: 0.36rem;
+    line-height: 0.8rem;
+    border-bottom: 1px solid #eee;
+    color: #2E95FC;
+}
+.tktontent{
+    height: 4rem;
+    overflow-y: scroll;
+}
+.tktontent li{
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+}
+.tktontent li.select{
+    color: #fff;
+    background-color: #2E95FC;
+}
+.tkclose{
+   position: absolute;
+   left: 0;
+   top: 66%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.tkclose img{
+    width: 0.8rem;
+}

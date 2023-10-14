@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大运天气</title>
+    <link rel="stylesheet" href="style/dyindex.css?t=20230423">
+</head>
+<body>
+    <div class="container">
+        <div class="location-box">
+            <p class="area">
+                <img src="images/index/position.png" alt="">
+                <span>成都市</span>
+                <img class="areax" src="images/index/xiala1.png" alt="">
+            </p>
+            <p class="street"></p>
+        </div>
+        <div class="temp-box">
+            <div class="temp-boxtop">
+                <div class="temp">--</div>
+                <div class="unnit">
+                    <span>℃</span>
+                    <span class="time"></span>
+                </div>
+            </div>
+            <div class="temp-boxbottom">
+                <div>
+                    <img src="images/index/temp.png" alt="">
+                    <span>过去1h降水:&nbsp;</span>
+                    <span class="shikuang rain">mm</span>
+                </div>
+                <div>
+                    <img src="images/index/rh.png" alt="">
+                    <span>湿度:&nbsp;</span>
+                    <span class="shikuang rh">%</span>
+                </div>
+                <div>
+                    <img src="images/index/wind.png" alt="">
+                    <span>西北偏西风:&nbsp;</span>
+                    <span class="shikuang wind">级</span>
+                </div>
+            </div>
+        </div>
+        <div class="week-box">
+            <!-- <div class="chart-title"><p>一周预报(℃)</p><span></span></div> -->
+            <div class="i-table">
+                <table>
+                    <tr class="i-weeks">
+                    </tr>
+                    <tr class="i-tr">
+                    </tr>
+                    <tr class="i-air">
+                    </tr>
+                    <tr class="i-airImg">
+                    </tr>
+                </table>
+            </div>
+            <div class="i-highchar0">
+                <div id="container"></div>
+            </div>
+            <div class="i-table">
+                <table>
+                    <tr class="i-airImg01">
+                    </tr>
+                    <tr class="i-airB">
+                    </tr>
+                    <tr class="i-tr2 i-tr3">
+                    </tr>
+                    <tr class="i-tr2 i-tr4">
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="dayun" style="display: none;">
+            <div class="dayuntitle">
+                <li dataindex="1">
+                    <span>区(市)县</span>
+                    <div></div>
+                </li>
+                <li dataindex="2">
+                    <span>旅游景区</span>
+                    <div></div>
+                </li>
+                <li class="select" dataindex="3">
+                    <span>大运场馆</span>  
+                    <div></div>
+                </li>
+            </div>
+            <div class="dayuncontent"></div>
+        </div>
+        <div class="waring-box"></div>
+        <p class="tip">以上气象数据基于成都市气象台人工智能和网格大数据分析生成，未经人工审核和质量控制，与实际情况可能存在差距，仅供公众参考。未经允许，不得转载。</p>
+    </div>
+    <div class="tk">
+        <div class="tktitle"><span>当前选择：</span><img src="images/index/shangla.png" alt=""></div>
+        <div class="tkcontent">
+            <div class="tkcontentl"></div>
+            <div class="tkcontentr"></div>
+        </div>
+    </div>
+</body>
+<script src="script/common/jquery-2.1.4.min.js"></script>
+<script src="script/common/rem50.js"></script>
+<script src="script/common/Tool.js"></script>
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=bc9671e0e0c95a6739fb0b407b2ef248"></script>
+<script src="script/lib/Sun/1.0.22/sun.js"></script>
+<script src="script/lib/sun.Webservice1.3.4/sun.webservice.js"></script>
+<script src="script/lib/highcharts/highcharts0.js"></script>
+<script src="script/page/index/dydindex.js?t=20230423"></script>
+</html>

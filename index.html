@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/dyindexs.css">
+</head>
+<body>
+    <div class="container dyindex">
+        <div class="location-box">
+            <p class="area">
+                <img src="images/index/position.png" alt="">
+                <span>成都市</span>
+            </p>
+            <p class="street"></p>
+        </div>
+
+        <div class="temp-box">
+            <div class="temp-boxtop">
+                <div class="temp">--</div>
+                <div class="unnit">
+                    <span>℃</span>
+                    <span class="time"></span>
+                </div>
+            </div>
+            <div class="temp-boxbottom">
+                <div>
+                    <img src="images/index/temp.png" alt="">
+                    <span>过去1h降水:&nbsp;</span>
+                    <span class="shikuang rain">mm</span>
+                </div>
+                <div>
+                    <img src="images/index/rh.png" alt="">
+                    <span>湿度:&nbsp;</span>
+                    <span class="shikuang rh">%</span>
+                </div>
+                <div>
+                    <img src="images/index/wind.png" alt="">
+                    <span>西北偏西风:&nbsp;</span>
+                    <span class="shikuang wind">级</span>
+                </div>
+            </div>
+        </div>
+
+         <div class="week-box"style="display:none"> 
+            <div class="i-table">
+                <table>
+                    <tr class="i-weeks">
+                    </tr>
+                    <tr class="i-tr">
+                    </tr>
+                    <tr class="i-air">
+                    </tr>
+                    <tr class="i-airImg">
+                    </tr>
+                </table>
+            </div>
+            <div class="i-highchar0">
+                <div class="container"></div>
+            </div>
+            <div class="i-table">
+                <table>
+                    <tr class="i-airImg01">
+                    </tr>
+                    <tr id="i-airB">           
+                    </tr>
+                    <tr id="i-tr2 i-tr3">           
+                    </tr>
+                    <tr id="i-tr2 i-tr4">           
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dayun">
+            <div class="dayuntitle">
+                <li dataindex="1">
+                    <span>区(市)县</span>
+                    <div></div>
+                </li>
+                <li dataindex="2">
+                    <span>旅游景区</span>
+                    <div></div>
+                </li>
+                <li class="select" dataindex="3">
+                    <span>大运场馆</span>  
+                    <div></div>
+                </li>
+            </div>
+            <div class="dayuncontent"></div>
+        </div>
+        <div class="waring-box"></div>
+        <p class="tip">以上气象数据基于成都市气象台人工智能和网格大数据分析生成，未经人工审核和质量控制，与实际情况可能存在差距，仅供公众参考。未经允许，不得转载。</p>
+    </div>
+
+    <div class="tk"> 
+        <div class="tktitle">全部分类</div>
+        <div class="tkcontent"></div>
+    </div>
+</body>
+<!-- jq工具  $(".tk") 方便使用选择器 -->
+<script src="script/common/jquery-2.1.4.min.js"></script>
+<!-- 适配工具  10px转换成   0.1rem   css里面常用-->
+<script src="script/common/rem50.js"></script>
+<!-- 时间工具 天气工具  把常用的方法写到一个地方 -->
+<script src="script/common/Tool.js"></script>
+<!-- 高德地图定位 -->
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=bc9671e0e0c95a6739fb0b407b2ef248"></script>
+<!-- 请求工具 -->
+<script src="script/lib/Sun/1.0.22/sun.js"></script>
+<!-- 基于sun.js封装的请求工具 -->
+<script src="script/lib/sun.Webservice1.3.4/sun.webservice.js"></script>
+<!-- 图标工具 曲线图 -->
+<script src="script/lib/highcharts/highcharts0.js"></script>
+<!-- 自己写的内容js  实现页面功能 -->
+<script src="script/page/index/dyindexs.js"></script>
+</html>

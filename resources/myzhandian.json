@@ -1,0 +1,130 @@
+{
+    "PROVINCE": "成都市",
+    "child": [
+        {
+            "city": "成都市",
+            "child": [
+                {
+                    "areacode": "S1003",
+                    "name": "锦江区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1038",
+                    "name": "青羊区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1009",
+                    "name": "金牛区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1007",
+                    "name": "武侯区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1006",
+                    "name": "成华区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1726",
+                    "name": "天府新区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1008",
+                    "name": "高新南区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1002",
+                    "name": "高新西区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S3163",
+                    "name": "东部新区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56286",
+                    "name": "龙泉驿区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "S1221",
+                    "name": "青白江区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56290",
+                    "name": "新都区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56187",
+                    "name": "温江区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56288",
+                    "name": "双流区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56272",
+                    "name": "郫都区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56276",
+                    "name": "新津区",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56295",
+                    "name": "简阳市",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56188",
+                    "name": "都江堰市",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56189",
+                    "name": "彭州市",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56284",
+                    "name": "邛崃市",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56181",
+                    "name": "崇州市",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56296",
+                    "name": "金堂县",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56285",
+                    "name": "大邑县",
+                    "city": "成都市"
+                },
+                {
+                    "areacode": "56281",
+                    "name": "蒲江县",
+                    "city": "成都市"
+                }
+            ]
+        }
+    ]
+}

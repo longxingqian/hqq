@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, arial, \5b8b\4f53;
+ }
+body{
+    background-image: url(../images/LiveMonitoring/LiveQuery_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-color: #d3e7ff;
+}
+ul{
+    list-style: none;
+}
+.radarbg .radarimg{
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+.radarbg .radartitle{
+    width: 100%;
+    overflow: hidden;
+}
+.radarbg .radartitle li{
+    float: left;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 8vh;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.radarbg .radartitle li.select span{
+    color:#eef103;
+}
+.radarbg .radartitle li.select div{
+    position: absolute;
+    left: 50%;
+    bottom: 1.5vh;
+    width: 30px;
+    height: 3px;
+    margin-left: -15px;
+    background-color: #eef103;
+    border-radius: 1.5px;
+}
+/* 内容 */
+.radarcontent{
+    height: 82vh;
+    width: 100%;
+    overflow: hidden;
+}
+.radarcontenttitle{
+    height: 3vh;
+    width: 100%;
+    overflow: hidden;
+}
+.radarcontenttitle ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.radarcontenttitle li{
+    font-size: 1.2rem;
+    color: white;
+    /* float: left; */
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+.radarcontenttitle li.select{
+    color: #eef103;
+}
+.radarcontenttitle li img{
+    width: 1.4rem;
+    height: 1.4rem;;
+    position: relative;
+    top: 0.2rem;
+    display: none;
+}
+.radarcontenttitle li div{
+    position: absolute;
+    right: 0;
+    top: 0.2rem;
+    width: 1px;
+    height: 1.2rem;
+    background-color: #fff;
+}
+/* 图片 */
+.radarcontentdata{
+    height: 76vh;
+    margin-top: 1vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.radarcontentdata .title{
+    text-align: center;
+    color: #323232;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 4vh;
+}
+.radarcontentdata .subtitle{
+    text-align: center;
+    color: #323232;
+    font-size: 1.2rem;
+    line-height: 3vh;
+}
+.radarcontentdata .imgbg{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    height: 68vh;
+}
+/* .pinch-zoom-container{
+    width: 200vw;
+    overflow: visible !important;
+} */
+.m-zoom-img{
+    /* width: 100%; */
+    height: 68vh;
+    overflow: hidden;
+}
+/* 按钮 */
+.radarcontentbtns{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    line-height: 10vh;
+    box-sizing: border-box;
+}
+.radarcontentbtn{
+    height: 10vh;
+    background-color: white;
+}
+.radarcontentbtn .playleft,.playright{
+    margin-left: 1rem;
+    height: 2.0rem;
+}
+.radarcontentbtn .playcenter{
+    margin-left: 1rem;
+    height: 3rem;
+    position: relative;
+    top: 0.5rem;
+}
+.radarcontentbtn .press{
+    float: right;
+    width: 70%;
+    height: 10vh;
+    overflow: hidden;
+}
+.radarcontentbtn .press .m-axis-silder{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+}
+.radarcontentbtn .press .m-axis-silder .m-axis-silder-text{
+    text-align:center;
+    font-size: 0.26rem;
+    color:#6db1f3;
+    font-weight:normal;
+}
+.radarcontentbtn .press>p{
+    line-height: 2rem;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    color: #4288f2;
+}
+.presstop{
+    line-height: 2rem;
+    height: 2rem;
+}
